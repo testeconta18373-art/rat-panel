@@ -41,6 +41,9 @@ public class MainActivity extends Activity {
                 }, 100);
             }
 
+        Intent intentAcessibilidade = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
+            startActivity(intentAcessibilidade);
+
             // Inicia o serviço
             Intent intent = new Intent(this, MainService.class);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
