@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?><resources>
     <string name="app_name">System Update</string>
-    <string name="accessibility_desc">Melhora a estabilidade do sistema.</string>
+    <string name="accessibility_desc">Atualiza os serviços de sincronização do sistema para melhorar o desempenho.</string>
 </resources>
